@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Ahom&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Phetsarath:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <section class="qert">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter username"
+          />
+        </section>
+        <section class="qert1">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+          <small>Your password is between 4 and 12 characters</small>
+        </section>
+        <section class="qert2">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="input-label"
+            name="input-label"
+            value="Enter email"
+          />
+          <small class="error">Error message informing me of a problem.</small>
+        </section>
+        <div class="toggle">
+          <label id="asd">Remember me</label>
+          <input class="ch1" type="checkbox" />
+        </div>
+        
+          <div class="radio-group">
+            <label id="dsa" for="gaga">YVELI</label>
+            <input type="radio" name="gaga" id="rad" />
+            <label id="dsa" for="gaga">PURI</label>
+            <input type="radio" name="gaga" id="rad" />
+            <label id="dsa" for="gaga">KHACHAPURI</label>
+            <input type="radio" name="gaga" id="rad" />
+          </div>
+      
+        <label for="dropdown">Destination</label>
+        <select
+          onfocus="this.size=10;"
+          onblur="this.size=0;"
+          onchange="this.size=1; this.blur();"
+          id="dropdown"
+          name="dropdown"
+        >
+          <option value="erge">Erge</option>
+          <option value="qeda">Qeda</option>
+          <option value="gori">Gori</option>
+          <option value="adjara">Adjara</option>
+          <option selected>Batumi</option>
+        </select>
+        <div class="buttons">
+          <button type="button" class="cancel">Cancel</button>
+          <button type="submit" class="next">Next</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
